@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Photo Gallery</title>
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="includes/sortable_gallery.css"
+    />
+    <script type="text/javascript" src="includes/jquery-1.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"
+    ></script>
+    <script type="text/javascript" src="includes/sortable_gallery.js"></script>
+  </head>
+  <body>
+    <img src="images/background.jpg" alt="" class="background" />
+
+    <div class="title"></div>
+
+    <div class="gallery">
+      <div class="sorting">
+        <div>
+          <a class="sortLink selected" data-keyword="all" href="#"
+            >All images</a
+          >
+          <a class="sortLink" data-keyword="flora" href="#">Flora</a>
+          <a class="sortLink" data-keyword="fauna" href="#">Fauna</a>
+          <a class="sortLink" data-keyword="landscape" href="#">Landscape</a>
+          <a class="sortLink" data-keyword="dance" href="#">Dance</a>
+          <div class="clear_both"></div>
+        </div>
+      </div>
+      <div class="photos">
+        <div class="thumbnail_container">
+          <a
+            class="thumbnail"
+            title="Hyacinth"
+            href="photos/0803210138.jpg"
+            data-keywords="flora"
+            ><img src="photos/0803210138_thumb.jpg" alt="hyacinth"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Spider Mum"
+            href="photos/0808170025.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808170025_thumb.jpg" alt="spider mum"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Spider Mum"
+            href="photos/0808170026.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808170026_thumb.jpg" alt="spider mum"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Spider Mums"
+            href="photos/0808170078.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808170078_thumb.jpg" alt="spider mums"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Stargazer Lily"
+            href="photos/0807250007.jpg"
+            data-keywords="flora"
+            ><img src="photos/0807250007_thumb.jpg" alt="stargazer lily"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Stargazer Lily"
+            href="photos/0807310016.jpg"
+            data-keywords="flora"
+            ><img src="photos/0807310016_thumb.jpg" alt="stargazer lily"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Water Lily"
+            href="photos/0808030024.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808030024_thumb.jpg" alt="water lily"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Sunflowers"
+            href="photos/0808070031.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808070031_thumb.jpg" alt="sunflowers"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Gerberas"
+            href="photos/0808100028.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808100028_thumb.jpg" alt="gerberas"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Gerberas"
+            href="photos/0808100054.jpg"
+            data-keywords="flora"
+            ><img src="photos/0808100054_thumb.jpg" alt="gerberas"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Tulips"
+            href="photos/0804260059.jpg"
+            data-keywords="flora"
+            ><img src="photos/0804260059_thumb.jpg" alt="tulips"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Tulips"
+            href="photos/0804260115.jpg"
+            data-keywords="flora"
+            ><img src="photos/0804260115_thumb.jpg" alt="tulips"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Tiger"
+            href="photos/0802020031.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802020031_thumb.jpg" alt="tiger"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Cheetah"
+            href="photos/0803300719.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803300719_thumb.jpg" alt="cheetah"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Lion"
+            href="photos/0803300767.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803300767_thumb.jpg" alt="lion"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Lion"
+            href="photos/0803300804.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803300804_thumb.jpg" alt="lion"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Gray Wolf"
+            href="photos/0803110295.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803110295_thumb.jpg" alt="gray wolf"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Rottweiller"
+            href="photos/0809210027.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0809210027_thumb.jpg" alt="rottweiller"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Giant Panda"
+            href="photos/0802080357.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802080357_thumb.jpg" alt="giant panda"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Giant Panda"
+            href="photos/0802080401.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802080401_thumb.jpg" alt="giant panda"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Spectacled Bear"
+            href="photos/0802080510.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802080510_thumb.jpg" alt="spectacled bear"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Sloth Bear"
+            href="photos/0804260214.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0804260214_thumb.jpg" alt="sloth bear"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Prairie Dog"
+            href="photos/0802020175.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802020175_thumb.jpg" alt="prairie dog"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Prairie Dog"
+            href="photos/0802160052.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802160052_thumb.jpg" alt="prairie dog"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Beaver"
+            href="photos/0804260424.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0804260424_thumb.jpg" alt="beaver"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Beaver"
+            href="photos/0804260428.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0804260428_thumb.jpg" alt="beaver"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Squirrel"
+            href="photos/0801190026.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0801190026_thumb.jpg" alt="squirrel on tree trunk"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Gorilla"
+            href="photos/0801120244.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0801120244_thumb.jpg" alt="gorilla"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Gorilla"
+            href="photos/0802070130.jpg"
+            data-keywords="fauna"
+            ><img
+              src="photos/0802070130_thumb.jpg"
+              alt="gorilla walking on two feet, holding carrots in one hand, celery in the other hand"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Flamingo"
+            href="photos/0803110115.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803110115_thumb.jpg" alt="flamingo"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Flamingo"
+            href="photos/0803110130.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803110130_thumb.jpg" alt="flamingo"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Smew"
+            href="photos/0803300164.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803300164_thumb.jpg" alt="smew"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Mallard Duck"
+            href="photos/0802160072.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0802160072_thumb.jpg" alt="mallard duck"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Mallard Duck"
+            href="photos/0805010289.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805010289_thumb.jpg" alt="mallard duck"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Mourning Dove"
+            href="photos/0803200116.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0803200116_thumb.jpg" alt="mourning dove"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Indian Peafowl (Peacock)"
+            href="photos/0803300179.jpg"
+            data-keywords="fauna"
+            ><img
+              src="photos/0803300179_thumb.jpg"
+              alt="Indian peafowl (peacock)"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Indian Peafowl (Peacock)"
+            href="photos/0803300186.jpg"
+            data-keywords="fauna"
+            ><img
+              src="photos/0803300186_thumb.jpg"
+              alt="Indian peafowl (peacock)"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Western Crowned-Pigeon"
+            href="photos/0805010369.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805010369_thumb.jpg" alt="Western crowned-pigeon"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Western Crowned-Pigeon"
+            href="photos/0805010514.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805010514_thumb.jpg" alt="Western crowned-pigeon"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Western Crowned-Pigeons"
+            href="photos/0808020200.jpg"
+            data-keywords="fauna"
+            ><img
+              src="photos/0808020200_thumb.jpg"
+              alt="Western crowned-pigeons"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Golden-Breasted Starling"
+            href="photos/0805010741.jpg"
+            data-keywords="fauna"
+            ><img
+              src="photos/0805010741_thumb.jpg"
+              alt="golden-breasted starling"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Carpenter Bee"
+            href="photos/0805040124.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805040124_thumb.jpg" alt="carpenter bee"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Carpenter Bee"
+            href="photos/0805040253.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805040253_thumb.jpg" alt="carpenter bee"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Carpenter Bee"
+            href="photos/0805040905.jpg"
+            data-keywords="fauna"
+            ><img src="photos/0805040905_thumb.jpg" alt="carpenter bee"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Joshua Tree National Park"
+            href="photos/1104200038.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1104200038_thumb.jpg"
+              alt="two joshua trees in a desert landscape"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Joshua Tree National Park"
+            href="photos/1104210029.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1104210029_thumb.jpg"
+              alt="two snow-covered mountains in distance over foreground of jagged, rocky, desert terrain"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Yellowstone National Park"
+            href="photos/1106090028.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1106090028_thumb.jpg"
+              alt="snow-covered mountain in distance over foreground of rolling, forested hills"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Grand Prismatic Spring, Yellowstone"
+            href="photos/1106150263.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1106150263_thumb.jpg"
+              alt="large blue-green pool with rising steam, and red, orange, and yellow streaks radiating out from it"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Yellowstone National Park"
+            href="photos/1106160663.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1106160663_thumb.jpg"
+              alt="small brownish pool in foreground, with larger blue steaming pool beyond it"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Mono Lake"
+            href="photos/1108140223.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1108140223_thumb.jpg"
+              alt="jagged mineral formations rising from blue/purple lake"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Yosemite Valley"
+            href="photos/1108110031.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1108110031_thumb.jpg"
+              alt="steep granite mountains rising over forested valley"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Cathedral Lake, Yosemite"
+            href="photos/1108170051.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1108170051_thumb.jpg"
+              alt="lake surrounded by trees and rocky terrain, with rocky mountain in background"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Half Dome, Yosemite"
+            href="photos/1108180337.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1108180337_thumb.jpg"
+              alt="steep, smooth granite mountain"
+          /></a>
+          <a
+            class="thumbnail"
+            title="North Kaibab Trail, Grand Canyon"
+            href="photos/1110090203.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1110090203_thumb.jpg"
+              alt="trail with rock cliff to right, steep dropoff to bottom of drainage to left"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Ribbon Falls, Grand Canyon"
+            href="photos/1110100444.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1110100444_thumb.jpg"
+              alt="sunlit water flowing from behind rock arch, falling down into pool below"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Cape Final, Grand Canyon"
+            href="photos/1110120118.jpg"
+            data-keywords="landscape"
+            ><img
+              src="photos/1110120118_thumb.jpg"
+              alt="full moon just rising over red/orange cliffs in distance"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Silk Weaving Dance"
+            href="photos/0808230184.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230184_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Silk Weaving Dance"
+            href="photos/0808230308.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230308_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Serng Pong-Lang"
+            href="photos/0808230438.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230438_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Serng Pong-Lang"
+            href="photos/0808230512.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230512_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Serng Pong-Lang"
+            href="photos/0808230538.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230538_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Long Drum Dance"
+            href="photos/0808230659.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230659_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Joyful Angels Dance"
+            href="photos/0808230815.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808230815_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Joyful Angels Dance"
+            href="photos/0808240460.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240460_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Joyful Angels Dance"
+            href="photos/0808240462.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240462_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Rojana Sieng Puang Malai"
+            href="photos/0808240497.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240497_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Ram Sat-Chatri"
+            href="photos/0808240589.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240589_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Ram Sat-Chatri"
+            href="photos/0808240594.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240594_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Ram Sat-Chatri"
+            href="photos/0808240637.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240637_thumb.jpg" alt="dancer"
+          /></a>
+          <a
+            class="thumbnail"
+            title="Long Drum Dance"
+            href="photos/0808240957.jpg"
+            data-keywords="dance"
+            ><img src="photos/0808240957_thumb.jpg" alt="dancer"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
