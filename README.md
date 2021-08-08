@@ -1,6 +1,6 @@
 # Image Gallery
 
-Image gallery built with jQuery, with an animated filter effect. It also uses Fancybox to a lightbox effect when viewing individual images.
+Image gallery built with jQuery, with an animated filter effect. It also uses Fancybox to provide a lightbox effect when viewing individual images.
 
 ## Project Setup
 
